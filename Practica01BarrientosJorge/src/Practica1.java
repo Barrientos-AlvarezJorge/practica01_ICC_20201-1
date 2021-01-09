@@ -1,0 +1,191 @@
+/**
+ * Practica 1 del curso de ICC.
+ *@author -Jorge Miguel Aaron Barrientos Alvarez.  421111666-
+ *@version -Version 1.0 Octubre 2020-
+ */
+
+public class Practica1{
+    public static void main(String[] args){
+	//Actividad 1
+	/* Este tipo puede tomar dos valores 'verdadero' y falso'
+	 *sirve para verificar de una manera más intuitiva la 
+	 *veracidad de algo si algo es verdadero o falso.
+	 *Tamaño en bits: 1
+	 */
+       	boolean cierto, falso;
+
+	
+        /*Este tipo de datos pueden tomar valores enteros
+	 *entre -128 y 128. Se usa para guardar valores
+	 *numéricos enteros  pequeños.
+	 *Tamaño en bits: 8
+	 */
+	byte dos, menosDos;
+
+	
+	/*Este tipo de datos pueden tomar valores enteros 
+	 *entre -32768 y 32767. Se usa para guardar valores
+	 *numéricos enteros pequeños pero más grandes que 
+	 *aquellos que se guardarían en un 'short'.
+	 *Tamaño en bits: 16
+	 */
+	short treintaMil, menosTreintaMil;
+
+	
+	/*Este tipo de datos pueden tomar valores enteros 
+	 *entre -2147483648 y 2147483647. Se usa para guardar valores 
+	 *numéricos enteros que comienzan a ser considerablemente 
+	 *grandes.
+	 Tamaño en bits: 32
+	 */
+	int trescientosMillones, menoscincoMillones;
+	
+
+	/*Este tipo de datos puede tomar valores enteros 
+	 *entre -9223372036854775808 y 9223372036854775807.
+	 *Se usa para gaurdar valores enteros aún más grandes que
+	 *aquellos que se guardarían en un 'int.
+	 *Tamaño en bits: 64.
+	 */
+	long trescientosmilMillones, menostrescientosmilMillones;
+
+
+	/*Este tipo de datos puede tomar valores enteros  y  decimales
+	 *entre -3.40282347e+38 y 3.40282347e+38. Se usa para guardar
+	 *números grandes que contiengan una parte entera y una parte 
+	 *decimal. Es de precisión simple.
+	 *Tamao en bits: 32
+	 */
+	float cincuentamilpuntotrescientosmilquinientostreintaytres, trescientosmilpuntocincuentaydos;
+
+
+	/*Este tipo de datos puede tomar valores enteros y decimales
+	 *entre -1.79769313486231570e+308 y 1.79769313486231570e+308.
+	 *Se usa para guardar números muy grandes que contangan una 
+	 *parte entera y una parte decimal. Es de precisión doble.
+	 *Tamaño en bits: 64
+	 */
+	double cincuentamilmillonespuntocienmilochoscientosdos, menoscincuentamilmillonespuntocienmilochoscientosdos;
+
+
+	/*Este tipo de de datos se usa para guardar caracteres,
+	 *ya sean letras, números u otros caracteres de un solo
+	 *byte.
+	 *Tamaño en bits: 16
+	 */
+	char nombre, apellido;
+
+	
+	
+	//Actividad 2
+	cierto = true;
+	falso = false;
+
+	dos=2;
+	menosDos=-2;
+
+	treintaMil=30000;
+	menosTreintaMil=-30000;
+
+	trescientosMillones=300000000;
+	menoscincoMillones=-5000000;
+
+	trescientosmilMillones=300000000000l;
+	menostrescientosmilMillones=-300000000000l;
+
+	cincuentamilpuntotrescientosmilquinientostreintaytres=50000.300533f;
+	trescientosmilpuntocincuentaydos=300000.52f;
+
+	cincuentamilmillonespuntocienmilochoscientosdos=50000000000.100802;
+	menoscincuentamilmillonespuntocienmilochoscientosdos=-50000000000.100802;
+	
+	nombre='J';
+	apellido='B';
+
+	
+	//Actividad 3
+
+       	boolean booleanTrue;
+	int cientoVeintisiete, treintaYDosMil;
+	long dosMilMillones, doscientosMilMillones;
+	char b;
+	double unoPuntodosMil, unoPuntoDoscientosMilMillones;
+	
+	/*Para esta variable el tipo de dato más apropiado es el
+	 *booleano, ya que este solo guarda o 'false' o 'true'
+	 */
+	booleanTrue = true;
+
+	/*Para estos dos datos consideré 'int' como el tipo de 
+	 *dato más apropiado, ya que nos da mas libertad de operar
+	 *de la que nos daría un byte o un short
+	 */
+	cientoVeintisiete=127;
+	treintaYDosMil=32000;
+
+	/*Para estos datos consideré 'long' como el tipo de dato más
+	 *apropiado, ya que los puede guardar sin ningún problema y 
+	 *nos da libertad para operar
+	 */
+	dosMilMillones=2000000000l;
+	doscientosMilMillones=200000000000l;
+
+	/*Para este dato consideré a 'char' como el tipo de dato más
+	 *apropiado, ya que este guarda caracteres y hace sencilla
+	 *la concatenación de varios caracteres.
+	 */
+	b='b';
+
+	/*Para estos datos consideré 'double' como el tipo de dato más 
+	 *apropiado, ya que los datos al tener varios puntos decimales, 
+	 *es más preciso
+	 */
+	unoPuntodosMil=1.2000;
+	unoPuntoDoscientosMilMillones=1.200000000000;
+
+	//Actividad 4
+
+	float y, x, z;
+	boolean w, v;
+	y=2f;
+	x=(y*y*y)*((y)/((y*y)+1));
+	z=x*((x+30)/((y*y)+((x*x)/(y))));
+
+	w=(true && false || true || true );
+	v=(false || w && w || false || !false);
+	
+	System.out.printf("%.3f%n", y);
+	System.out.printf("%.3f%n", x);	
+	System.out.printf("%.3f%n", z);
+	System.out.println(w);
+	System.out.println(v);
+	
+
+	//Actividad 5
+	int valor1=34;
+	int valor2=2;
+	int valor3=4;
+	int valor4=9;
+	int valor5=90;
+
+	int misterio1, misterio2;
+
+	misterio1=(++valor1)-(--valor2)+(valor2++)+(++valor1);
+	misterio2=(valor4++)+(++valor4)+(valor5++)-(--valor5);
+	
+	/* misterio1 arroja un valor de 71 y misterio2 de 20. Esto se debe a lo siguiente:
+	 *Primero debemos recordar la diferencia entre ++b y b++:
+	 *++b  primero aumenta 1 a b y luego opera con b, caso contrario de b++, ya que este
+	 *primero opera con b y luego le aumenta 1.
+	 
+	 
+	 *En el caso de misterio1, al momento de hacer la suma se tiene que:
+	 *++valor1=35, --valor2=1, valor2++=2 y ++valor1=35. Al hacer la suma obtenemos 71.
+
+	 *En el caso de misterio2, al momento de hacer la suma se tiene que: 
+	 valor4++=9, ++valor4=10, valor5++=90, --valor5=89. Al hacer la suma obtenemos 20
+	 */
+	System.out.println(misterio1);
+	System.out.println(misterio2);
+    }
+}
